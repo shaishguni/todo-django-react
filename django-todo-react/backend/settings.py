@@ -17,11 +17,14 @@ from xmlrpc.client import boolean
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+def sec_key():
+    from django.core.management.utils import get_random_secret_key as sec
+    return sec
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-7tk-q1b&@3z!f(c03ha_%!w8mms6hf)=&952apkb(3ie$k5mzm'
+SECRET_KEY = sec_key()
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
