@@ -5,4 +5,4 @@ from django.db import models
 class Todo(models.Model):
     name = models.CharField(max_length=250)
     description = models.TextField()
-    done = models.BooleanField(default=False)
+    completed = models.BooleanField(default=False)

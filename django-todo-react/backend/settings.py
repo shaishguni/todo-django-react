@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+from xmlrpc.client import boolean
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-1wvqh7d!eb(wa!syigt^w+xu45r0!2qc0xak^$rue1mee3*x77'
+SECRET_KEY = 'django-insecure-7tk-q1b&@3z!f(c03ha_%!w8mms6hf)=&952apkb(3ie$k5mzm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
