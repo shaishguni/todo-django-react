@@ -11,34 +11,34 @@ A Django course made by me to explain how  Django-react works for my friend…
 
 # Setup backend
 
-```json
+```bash
 https://github.com/shaishguni/todo-django-react.git
 ```
-```json
+```bash
 virtualenv venv && source venv/bin/activate
 ```
 
-```json
+```bash
 cd django-todo-react/backend
 ```
-```json
+```bash
 pip install django djangorestframework django-cors-header
 ```
-```json
+```bash
 python manage.py migrate
 ```
-```json
+```bash
 python manage.py runserver
 ```
 #  Setup frontend
 
-```json
+```bash
 cd django-todo-react/frontend
 ```
-```json
-npm i
+```bash
+npm i && axios.get("http://localhost:8000/api/todos/") && axios.get("/api/todos/")
 ```
-```json
+```bash
 npm start
 ```
 
